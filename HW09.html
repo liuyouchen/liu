@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8">
+    <title>HW09</title>
+   <script>
+       function cal(){
+           weight=document.getElementById("weight").value;
+           height=document.getElementById("height").value;
+           BMIs=weight/((height/100)*(height/100));
+           document.getElementById("bmi").value=BMIs;}           
+    </script>
+
+  </head>
+  <body>
+    <div>
+    <div>
+        <div class="col-md-8">
+            <p>體重:<input type="text" name="weight" id="weight">kg</p>
+            <p>身高:<input type="text" name="height" id="height">cm</p>
+            <p><button onclick="cal()">計算</button></p>
+            <p>BMI=<input type="text" id="bmi"></p>
+        
+        </div>
+    </div>
+          </div>
+
+  </body>
+</html>
